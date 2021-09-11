@@ -1,4 +1,4 @@
-package fr.nilowk.tuto.utils;
+package fr.nilowk.test.utils;
 
 import java.util.ArrayList;
 import java.util.List;
