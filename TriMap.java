@@ -19,9 +19,9 @@ public class TriMap<K, V, X> {
                 return;
             }
         }
-        this.keys.add(key);
-        this.values.add(value);
-        this.secondValues.add(secondValue);
+        keys.add(key);
+        values.add(value);
+        secondValues.add(secondValue);
     }
 
     public void replace(K key, V newValue) {
@@ -39,7 +39,7 @@ public class TriMap<K, V, X> {
     }
 
     public V getValue(K key) {
-        if (this.keys.contains(key)) {
+        if (keys.contains(key)) {
             int index = getIndex(key);
             return values.get(index);
         }
@@ -47,7 +47,7 @@ public class TriMap<K, V, X> {
     }
 
     public X getSecondValue(K key) {
-        if (this.keys.contains(key)) {
+        if (keys.contains(key)) {
             int index = getIndex(key);
             return secondValues.get(index);
         }
