@@ -1,7 +1,8 @@
 package fr.nilowk.tuto.utils;
 
-import java.util.*;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
 
 public class TriMap<K, V, X> {
 
@@ -70,6 +71,10 @@ public class TriMap<K, V, X> {
 
     public int getSize() {
         return keys.size();
+    }
+
+    public void forEachKeys(Consumer<? super K> action) {
+        keys.forEach(action);
     }
 
     private Integer getIndex(K key) {
