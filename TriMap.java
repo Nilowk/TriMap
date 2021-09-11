@@ -13,7 +13,6 @@ public class TriMap<K, V, X> {
         if (keys.contains(key)) {
             throw new Exception();
         }
-        System.out.println("caca");
         this.keys.add(key);
         this.values.add(value);
         this.secondValues.add(secondValue);
@@ -21,10 +20,10 @@ public class TriMap<K, V, X> {
     }
 
     public V getValue(K key) {
-        if (this.values.contains(key)) {
+        if (this.keys.contains(key)) {
             int index = 0;
-            for (V v : values) {
-                if (v == key) {
+            for (K k : keys) {
+                if (k == key) {
                     return values.get(index);
                 }
                 index++;
