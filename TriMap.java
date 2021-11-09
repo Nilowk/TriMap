@@ -1,4 +1,4 @@
-package fr.nilowk.tuto.utils;
+package fr.nilowk.function.utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
